@@ -1,0 +1,16 @@
+<gadget>
+<name>RSS Slideshow</name>
+<version>1.0.0.0</version>
+<author name="Akihiro Nishiya">
+<info url="http://d.hatena.ne.jp/maneman8000" />
+</author>
+<copyright>Akihiro Nishiya</copyright>
+<description>"HelloWorld" Sidebar gadget sample.</description>
+<hosts>
+<host name="sidebar">
+<base type="HTML" apiVersion="1.0.0" src="RSSSlideShow.html" />
+<permissions>Full</permissions>
+<platform minPlatformVersion="1.0" />
+</host>
+</hosts>
+</gadget>

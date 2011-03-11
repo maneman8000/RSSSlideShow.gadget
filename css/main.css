@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  border:none;
+  width:360px;
+  height:280px;
+}
+div#pictureFrame
+{
+  position:absolute;
+  overflow:hidden;
+  z-index:1;
+  filter:
+  progid:DXImageTransform.Microsoft.Barn(orientation=vertical, motion=out, duration=0.50)
+  progid:DXImageTransform.Microsoft.Blinds(bands=12, direction='DOWN', duration=0.50)
+  progid:DXImageTransform.Microsoft.Checkerboard(squaresX=12, squaresY=8, direction='up', duration=0.50) 
+  progid:DXImageTransform.Microsoft.RandomDissolve(, duration=0.50) 
+  progid:DXImageTransform.Microsoft.Fade(duration=0.50)
+  progid:DXImageTransform.Microsoft.Inset(duration=0.50)
+  progid:DXImageTransform.Microsoft.Iris(irisStyle='PLUS', motion='out', duration=0.50) 
+  progid:DXImageTransform.Microsoft.Pixelate(MaxSquare=20, duration=0.50, Enabled=false)
+  progid:DXImageTransform.Microsoft.RadialWipe(wipeStyle='clock', duration=0.50)
+  progid:DXImageTransform.Microsoft.Slide(slideStyle='SWAP', bands=1, duration=0.50)
+  progid:DXImageTransform.Microsoft.Spiral(GridSizeX=16, GridSizeY=16, duration=0.50)
+  progid:DXImageTransform.Microsoft.Stretch(stretchStyle='push', duration=0.50)
+  progid:DXImageTransform.Microsoft.Wipe(GradientSize=1.0, wipeStyle=0, motion='reverse', duration=0.50)
+  progid:DXImageTransform.Microsoft.Wheel(spokes=20, duration=0.50);    
+}
+#slideshowBg
+{
+  position:absolute;
+  z-index:-1;
+}
