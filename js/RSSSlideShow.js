@@ -1,3 +1,6 @@
+var slideTime = 1000 * 60;
+var imagelinks = [];
+var showIndex = 0;
 
 function init() {
     
@@ -14,13 +17,19 @@ function init() {
         if (request.readyState == 4 && request.status == 200
             && /text\/xml/.exec(request.getResponseHeader("Content-Type"))) {
             var doc = request.responseXML;
-            var imagelinks = getContentImageLinks(doc);
+            imagelinks = getContentImageLinks(doc);
 //            System.Debug.outputString(imagelinks[0]);
-            picture.src = imagelinks[0];
+            showPicture();
+            setInterval(showPicture, slideTime);
         }
     };
     request.open("GET", "http://blog.livedoor.jp/dokubutu/index.rdf");
     request.send(null);
+}
+
+function showPicture() {
+    picture.src = imagelinks[showIndex++];
+    if (showIndex == imagelinks.length) showIndex = 0;
 }
 
 function getContentImageLinks(xml) {
