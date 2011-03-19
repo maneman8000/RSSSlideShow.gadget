@@ -12,6 +12,8 @@ function init() {
 
     slideshowBg.src="url(images/slideshow_glass_frame.png)";
 
+    System.Gadget.settingsUI = "settings.html";
+
     var request = new XMLHttpRequest();
     request.onreadystatechange = function() {
         if (request.readyState == 4 && request.status == 200
